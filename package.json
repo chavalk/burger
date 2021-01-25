@@ -2,7 +2,7 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "Allows user to add burgers and to devour them.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
