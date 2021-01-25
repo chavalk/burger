@@ -4,7 +4,8 @@
 <ol>
     {{#each burgers}}
         <li>
-            <p>{{this.burger_name}}</p>
+            <p>{{this.burger_name}}<button>Devour it!</button></p>
+            
         </li>
     {{/each}}
 </ol>
@@ -12,11 +13,11 @@
 <form class="create-form">
 
     <div class="form-group">
-        <input type="text" id="name">
+        <input type="text" id="burger">
     </div>
 
     <div class="button">
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit">Submit</button>
     </div>
     
     <p class="message">Enter a burger you want to eat and click the "Submit" button.</p>
