@@ -12,11 +12,19 @@ var orm = {
             cb(result);
         });
     },
-    insertOne: function(parameter, cb) {
+    insertOne: function(name, cb) {
+        var queryString = "INSERT INTO burgers (burger_name) VALUES ('" + name + "');";
 
+        connection.query(queryString, function(err, result) {
+            if (err) {
+                throw err;
+            }
+
+            cb(result);
+        });
     },
     updateOne: function(parameter, cb) {
-        
+
     }
 };
 

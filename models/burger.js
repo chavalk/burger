@@ -6,6 +6,11 @@ var burger = {
         orm.selectAll("burgers", function(res) {
             cb(res);
         });
+    },
+    create: function(name, cb) {
+        orm.insertOne(name, function(res) {
+            cb(res);
+        });
     }
 };
 
