@@ -11,6 +11,12 @@ var orm = {
             }
             cb(result);
         });
+    },
+    insertOne: function(parameter, cb) {
+
+    },
+    updateOne: function(parameter, cb) {
+        
     }
 };
 
