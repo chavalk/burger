@@ -11,6 +11,11 @@ var burger = {
         orm.insertOne(name, function(res) {
             cb(res);
         });
+    },
+    update: function(devourUpdate, condition, cb) {
+        orm.updateOne(devourUpdate, condition, function(res) {
+            cb(res);
+        });
     }
 };
 
