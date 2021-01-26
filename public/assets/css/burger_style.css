@@ -13,19 +13,3 @@ img {
 h1 {
     text-align: center;
 }
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.form-group {
-    margin: 0 auto;
-    width: 13%;
-}
-
-.message {
-    text-align: center;
-}
