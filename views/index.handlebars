@@ -3,10 +3,22 @@
 
 <ol>
     {{#each burgers}}
-        <li>
-            <p>{{this.burger_name}}<button>Devour it!</button></p>
-            
-        </li>
+        {{#unless devoured}}
+            <li>
+                <p>{{this.burger_name}}<button>Devour it!</button></p>
+
+            </li>
+        {{/unless}}
+    {{/each}}
+</ol>
+
+<ol>
+    {{#each burgers}}
+        {{#if devoured}}
+            <li>
+                <p>{{this.burger_name}}</p>
+            </li>
+        {{/if}}
     {{/each}}
 </ol>
 
@@ -19,7 +31,7 @@
     <div class="button">
         <button type="submit" id="submit">Submit</button>
     </div>
-    
+
     <p class="message">Enter a burger you want to eat and click the "Submit" button.</p>
 
 </form>
