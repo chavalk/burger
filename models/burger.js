@@ -13,7 +13,7 @@ var burger = {
         });
     },
     update: function(devourUpdate, condition, cb) {
-        orm.updateOne(devourUpdate, condition, function(res) {
+        orm.updateOne("burgers", devourUpdate, condition, function(res) {
             cb(res);
         });
     }
