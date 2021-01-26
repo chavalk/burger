@@ -21,8 +21,22 @@ router.get("/", function(req, res) {
 router.post("/api/burgers", function(req, res) {
     burger.create(req.body.burger_name, function(result) {
         res.redirect("/");
-    })
-})
+    });
+});
+
+router.put("/api/cats/:id", function(req, res) {
+    var condition = "id = " + req.params.id;
+
+    burger.update({
+        devour: true
+    }, condition, function(result) {
+        if (result.changedRows == 0) {
+            return res.status(404).end();
+        } else {
+            res.status(200).end();
+        }
+    });
+});
 
 // Export routes for server.js to use
 module.exports = router;
