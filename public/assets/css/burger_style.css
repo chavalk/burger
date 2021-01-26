@@ -1,8 +1,10 @@
+/* Body styling */
 body {
     background-color: sandybrown;
     font-family: sans-serif;
 }
 
+/* Image styling */
 img {
     height: 150px;
     display: block;
@@ -10,6 +12,8 @@ img {
     margin-right: auto;
     width: 10%;
 }
+
+/* h1 styling */
 h1 {
     text-align: center;
 }
