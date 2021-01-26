@@ -19,7 +19,8 @@ $(function() {
 
         $.ajax("/api/burgers/" + id, {
             type: "PUT"
-        }).then(function(data) {
+        }).then(function() {
+            
             location.reload();
         });
     });

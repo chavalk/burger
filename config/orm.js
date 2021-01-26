@@ -23,9 +23,9 @@ var orm = {
             cb(result);
         });
     },
-    updateOne: function(table, devourUpdate, condition, cb) {
-        var queryString = "UPDATE " + table + " SET devoured = true WHERE " + condition;
-
+    updateOne: function(id, cb) {
+        var queryString = "UPDATE burgers SET devoured = true WHERE id = " + id + ";";
+        console.log(queryString);
         connection.query(queryString, function(err, result) {
             if (err) {
                 throw err;
