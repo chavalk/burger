@@ -1,58 +1,45 @@
-# burger
+# Eat Da Burger
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-This application is a Full-Stack application built from scratch. It follows the MVC model to separate the job of each file. The user interface of the application is very simple. See below for the link to the deployed application in Heroku.
+A full stack application that allows users to add a new burger to the list and to devour any of the burgers.
+
+## What the project does
+
+The project allows users to add different types of burgers to the list and to click a button to devour each one and have then be displayed in another list. Below is a GIF showing an interaction with the application.
+
+![burger](./public//assets/img/burger.gif)
+
+## Why is the project useful
+
+The project is useful mostly to allow me to build my first full stack application from scratch. For a user, the use is very simple, although, if you're looking for an easy way to keep track of your burgers, you've found the pefect app!
+
+## How can users get started with this project
+
+Simply navigate to the deployed version of the website by following the link below.
 
 https://thawing-island-13237.herokuapp.com/
 
-When you navigate to the page you are presented with the page instructing you to enter the name of a burger you want to eat and to click the submit button. After clicking the submit button the page will refresh and show you the entry on the top-left of the input box.
+## What technologies were used with this project
 
-The entry will have a devour it button right next to it and the entry will switch to the right side without the button to indicate that the burger has been eaten. See below for a screenshot of the application.
+* JavaScript
+* Handlebars
+* CSS
+* Express
+* MySQL
+* Express-Handlebars
+* Heroku
 
-![burger](./public/assets/img/main.png)
-
-The backend for the application is a bit more complicated. It starts with the views folder containing the main and index handlebars file. The main file contains the shell HTML code to build the page and the index file contains the code to show the user the lists, the input, and the submit button.
-
-The public folder contains the CSS to style the page and the js folder which uses jquery to set up the listeners for the two buttons in the page. Next is the controllers folder which has the available routes depending on the request the controller received.
-
-The models folder has the burger model which calls on the methods in the orm.js file to interact with the database. Last but not least, in the config folder the orm.js file is the one containing the methods and the code to communicate with the database.
-
-## Table of Contents
-
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-
-## Installation
-
-The application uses three npm packages. Express, express-handlebars, and mysql. To install all three of them in a backend environment simply run npm install on the terminal of your choice.
-
-## Usage
-
-The application is primarily used to expose the developer to all the steps involved in building a full-stack application from scratch.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-## Contributing
-
-Contributions are currently not accepted for this project.
-
-## Tests
-
-There is no testing available within the application.
-
-## Questions
-
-## Questions
+## Where can users get help with your project
 
 My GitHub username is: chavalk
 
 Link: https://github.com/chavalk
 
 If you have additional questions, feel free to reach me at chavalk@hotmail.com.
+
+## Who maintains and contributes to the project
+
+Currently I'm the only person maintaining and contributing to the project.
